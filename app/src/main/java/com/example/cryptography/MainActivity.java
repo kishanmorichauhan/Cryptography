@@ -1,5 +1,6 @@
 package com.example.cryptography;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -38,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Decryption", Toast.LENGTH_SHORT).show();
             }
         });
-
 
     }
 }

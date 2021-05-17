@@ -42,5 +42,9 @@ public class Decryption extends AppCompatActivity {
             Toast.makeText(this, "Copied", Toast.LENGTH_SHORT).show();
         }
 
+        if(getSupportActionBar()!=null){
+            getSupportActionBar().hide();
+        }
+
     }
 }

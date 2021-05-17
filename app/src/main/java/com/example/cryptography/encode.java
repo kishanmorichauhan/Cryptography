@@ -15,9 +15,9 @@ public class encode {
         String res="";
         int bin[]=new int[111];
         int idx=0;
-        for(int j=0; j<ct; j++){
-            int temp=a[j];
-            for(int k=0; k<ct; k++) bin[k]=0;
+        for(int ii=0; ii<ct; ii++){
+            int temp=a[ii];
+            for(int j=0; j<ct; j++) bin[j]=0;
             idx=0;
             while (temp>0){
                 bin[idx++]=temp%2;
@@ -26,13 +26,13 @@ public class encode {
 
             String dig="";
             String temps;
-            for(int k=0; k<7;k++){
+            for(int j=0; j<7;j++){
                 temps = Integer.toString(bin[j]);
                 dig=dig.concat(temps);
             }
 
             String rev="";
-            for(int k =dig.length()-1; k>=0; k--){
+            for(int j =dig.length()-1; j>=0; j--){
 
                 char ca = dig.charAt(j);
                 rev=rev.concat(String.valueOf(ca));
@@ -43,4 +43,5 @@ public class encode {
         res = initializer.concat(res);
         return res;
     }
+
 }

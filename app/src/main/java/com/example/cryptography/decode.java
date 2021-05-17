@@ -26,6 +26,7 @@ public class decode {
         int idx2=0;
         for(int i=0; i<data.length(); i++){
             if(i%7==0){
+                idx++;
                 idx2=0;
                 char temp = data.charAt(i);
                 asc[idx][idx2]=temp-'0';
