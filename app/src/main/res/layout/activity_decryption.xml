@@ -67,6 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:hint="Paste here"
                 android:textSize="20sp"
                 android:textColor="@color/white"
                 android:layout_marginTop="5dp"/>
